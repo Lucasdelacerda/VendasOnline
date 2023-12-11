@@ -1,6 +1,6 @@
-const categoriasSubmenu = document.getElementById('categorias-submenu')
-const categoriasButton = document.getElementById('categorias')
-let subMenuButtons = document.getElementsByClassName('categorias-submenu-buttons')
+const categoriasSubmenu = document.getElementById('shop-submenu')
+const categoriasButton = document.getElementById('shop')
+let subMenuButtons = document.getElementsByClassName('shop-submenu-buttons')
 
 categoriasButton.addEventListener('mouseenter', () =>{
    categoriasSubmenu.style.display = 'flex' 

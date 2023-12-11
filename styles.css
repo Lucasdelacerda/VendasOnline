@@ -71,11 +71,12 @@ nav {
 	list-style: none;
 	color: var(--second-text-color);
 }
-.menu-buttons:hover{
-	color:black;
+
+.menu-buttons:hover {
+	color: black;
 }
 
-.categorias-button {
+.shop-button {
 	color: var(--first-text-color);
 	font-weight: 500;
 
@@ -150,7 +151,7 @@ nav {
 	margin-left: 15.5px;
 }
 
-.categorias-container {
+.shop-container {
 	display: flex;
 	flex-direction: row;
 	position: relative;
@@ -173,11 +174,11 @@ nav {
 #vectorRight {
 	transform: rotate(-45deg);
 	position: absolute;
-	left: 85px;
+	left: 45px;
 }
 
-#categorias-submenu {
-	display: flex;
+#shop-submenu {
+	display: none;
 	flex-direction: column;
 	position: absolute;
 	justify-content: center;
@@ -185,25 +186,53 @@ nav {
 	background: #dfdfdf;
 	top: 70px;
 	border-radius: 6px;
-	height:135px;
-	padding:0;
+	height: 135px;
+	padding: 0;
 }
-.triangle{
+
+.triangle {
 	position: absolute;
-	bottom:15px;
-	right:-45px;
+	bottom: 15px;
+	right: -45px;
 	z-index: -10;
 }
-.categorias-submenu-buttons {
+
+.shop-submenu-buttons {
 	border: none;
 	color: var(--second-text-color);
 	font-size: 15px;
 	font-style: normal;
 	font-weight: 700;
-	width:100%;
-   height: 30px;
-   background: transparent;   
+	width: 100%;
+	height: 30px;
+	background: transparent;
 }
-.categorias-submenu-buttons:hover{
+
+.shop-submenu-buttons:hover {
 	color: var(--secondary-color);
-} 
+}
+
+.categories {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 8rem;
+}
+
+.title-section {
+	font-size: 24px;
+	font-weight: 700;
+	font-style: normal;
+}
+.description{
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	color:var(--second-text-color);
+	margin: 10px 0 48px 0;
+}
+.grid-categories{
+ display: grid;
+ gap:3.1rem;
+ 
+}
