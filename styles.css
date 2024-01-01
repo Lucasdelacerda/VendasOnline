@@ -159,12 +159,19 @@ nav {
 }
 
 .promocao {
-	width: 53.2rem;
+	width: 72.2rem;
 }
 
 .socials {
 	display: flex;
 	flex-direction: row;
+}
+.instagram-icon:hover{
+	background-image: linear-gradient(135deg, #8134AF, #F58529);
+
+}
+.youtube-icon:hover path{
+	fill:(#FF0000);
 }
 
 .social-icons {
