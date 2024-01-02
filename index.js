@@ -1,18 +1,11 @@
-const categoriasSubmenu = document.getElementById('shop-submenu')
-const categoriasButton = document.getElementById('shop')
+const shopSubmenu = document.getElementById('shop-submenu')
+const shopButton = document.getElementById('shop')
 let subMenuButtons = document.getElementsByClassName('shop-submenu-buttons')
 
-categoriasButton.addEventListener('mouseenter', () =>{
-   categoriasSubmenu.style.display = 'flex' 
+
+shopButton.addEventListener('mouseenter', () =>{
+   shopSubmenu.style.display = 'flex'   
 })
-categoriasButton.addEventListener('mouseleave', () =>{
-    categoriasSubmenu.style.display = 'none' 
- })
-
-subMenuButtons.addEventListener('mouseenter', () =>{
-    categoriasSubmenu.style.display = 'flex' 
- })
-
-subMenuButtons.addEventListener('mouseleave', () =>{
-    categoriasSubmenu.style.display = 'none' 
- })
+shopSubmenu.addEventListener('mouseleave', () =>{
+   shopSubmenu.style.display = 'none'   
+})
