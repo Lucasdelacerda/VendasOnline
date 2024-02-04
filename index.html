@@ -1,26 +1,28 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./src/pages/Home/index.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-        <img src="./assets/icons/phone icon.svg" alt="icone de telefone" class="header-icons">
+        <img src="./src/pages/Home/assets/icons/phone icon.svg" alt="icone de telefone" class="header-icons">
         <h3 class="contacts number">(83) 99402-3563</h3>
-        <img src="./assets/icons/mail icon.svg" alt="icone de email " class="header-icons">
+        <img src="./src/pages/Home/assets/icons/mail icon.svg" alt="icone de email " class="header-icons">
         <h3 class="contacts mail">lacerdalucas27@gmail.com</h3>
         <h3 class="promotion"> Follow Us and get a chance to win 80% off</h3>
         <div class="socials">
             <h3>Follow-us:</h3>
             <a href="#">
-                <img src="./assets/icons/instagram icon.svg" alt="icone do instagram"
+                <img src="./src/pages/Home/assets/icons/instagram icon.svg" alt="icone do instagram"
                     class="social-icons instagram-icon"></a>
-            <a href="#"><svg class="social-icons youtube-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+            <a href="#">
+              <svg class="social-icons youtube-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="16"
                     viewBox="0 0 17 16" fill="none">
                     <g clip-path="url(#clip0_3017_11299)">
                         <path
@@ -34,10 +36,10 @@
                     </defs>
                 </svg> </a>
             <a href="#">
-                <img src="./assets/icons/facebook icon.svg" alt="icone do facebook" class="social-icons facebook-icon">
+                <img src="./src/pages/Home/assets/icons/facebook icon.svg" alt="icone do facebook" class="social-icons facebook-icon">
             </a>
             <a href="#">
-                <img src="./assets/icons/twitter icon.svg" alt="icone do twitter" class="social-icons twitter-icon">
+                <img src="./src/pages/Home/assets/icons/twitter icon.svg" alt="icone do twitter" class="social-icons twitter-icon">
             </a>
         </div>
     </header>
@@ -56,7 +58,7 @@
                 </li>
             </a>
             <div id="shop-submenu">
-                <img class="triangle" src="./assets/images/Design sem nome (1).png">
+                <img class="triangle" src="./src/pages/Home/assets/images/Design sem nome (1).png">
                 <a href="#">
                     <button class="shop-submenu-buttons">Men</button>
                 </a>
@@ -85,20 +87,26 @@
         </ul>
         <ul class="login-chart">
             <a href="#">
-                <li class="links login"><img class="login-icon icons" src="./assets/icons/login icon.svg">
+                <li class="links login">
+                  <img class="login-icon icons" src="./src/pages/Home/assets/icons/login icon.svg">
                     Login/Register
                 </li>
             </a>
-            <a href="#">
-                <li class="links"><img class="search-icon icons" src="./assets/icons/search icon.svg"></li>
-            </a>
-            <a href="#">
-                <li class="links"><img class="cart-icon icons" src="./assets/icons/cart icon.svg">
+            
+                  <input onclick="searchBarFocus" id="search_bar" type="text" name="search" placeholder="search">
+                <li class="links search-icon">
+                  <img class=" icons" src="./src/pages/Home/assets/icons/search icon.svg">
+                </li>
+            
+              <a href="#">
+                <li class="links">
+                  <img class="cart-icon icons" src="./src/pages/Home/assets/icons/cart icon.svg">
                     <h3 id="cart-number"></h3>
                 </li>
             </a>
             <a href="#">
-                <li class="links"><img class="like-icon icons" src="./assets/icons/like icon.svg">
+                <li class="links">
+                  <img class="like-icon icons" src="./src/pages/Home/assets/icons/like icon.svg">
                     <h3 id="like-number"></h3>
                 </li>
             </a>
@@ -120,10 +128,9 @@
                 </div>
                 <ul class="collection-images-container">
                     <li class="circle1 circles">
-                        <img class="collection-image-woman" src="./assets/images/technology 1.png">
+                        <img class="collection-image-woman" src="./src/pages/Home/assets/images/technology 1.png">
 
                     </li>
-                    <li class="circle2 circles"></li>
                     <li class="circle3 circles"></li>
                     <li class="circle4 circles"></li>
 
@@ -131,22 +138,22 @@
             </div>
             <div class="shop-media">
                 <a href="#">
-                    <img src="./assets/icons/hooly icon.svg" alt="hooly icon">
+                    <img src="./src/pages/Home/assets/icons/hooly icon.svg" alt="hooly icon">
                 </a>
                 <a href="#">
-                    <img src="./assets/icons/lyft icon.svg" alt="lyft icon">
+                    <img src="./src/pages/Home/assets/icons/lyft icon.svg" alt="lyft icon">
                 </a>
                 <a href="#">
-                    <img src="./assets/icons/cap icon.svg" alt="cap icon">
+                    <img src="./src/pages/Home/assets/icons/cap icon.svg" alt="cap icon">
                 </a>
                 <a href="#">
-                    <img src="./assets/icons/stripe icon.svg" alt="stripe icon">
+                    <img src="./src/pages/Home/assets/icons/stripe icon.svg" alt="stripe icon">
                 </a>
                 <a href="#">
-                    <img src="./assets/icons/aws icon.svg" alt="aws icon">
+                    <img src="./src/pages/Home/assets/icons/aws icon.svg" alt="aws icon">
                 </a>
                 <a href="#">
-                    <img src="./assets/icons/reddit icon.svg" alt="redit icon">
+                    <img src="./src/pages/Home/assets/icons/reddit icon.svg" alt="redit icon">
                 </a>
 
             </div>
@@ -173,306 +180,392 @@
                 </div>
             </div>
         </section>
-        <section class="bestseller-products">
-            <h4 class="subtitle">Featured Products</h4>
+        <section class="bestseller-products-container">
+            <h4 class="subtitle-container">Featured Products</h4>
             <h3 class="title">BESTSELLER PRODUCTS</h3>
+            <p class="description"> Problems trying to resolve the conflict between
+            </p>
             <ul class="bestsellers-products-list">
                 <li class="bestseller-products">
-                    <img class="bestseller-images" src="./assets/images/product-cover-5 (1).png">
+                    <img class="bestseller-images" src="./src/pages/Home/assets/images/product-cover-5 (1).png">
                     <h4 class="bestseller-product-titles">Graphic Design</h4>
                     <h5 class="class-of-product">English Department</h5>
                     <h5 class="bestseller-product-price">$16.48 <span class="discount">$6.48</span></h5>
                 </li>
                 <li class="bestseller-products">
-                    <img class="bestseller-images" src="assets/images/product-cover-5 (3).png">
+                    <img class="bestseller-images" src="./src/pages/Home/assets/images/product-cover-5 (3).png">
                     <h4 class="bestseller-product-titles">Graphic Design</h4>
                     <h5 class="class-of-product">English Department</h5>
                     <h5 class="bestseller-product-price">$16.48 <span class="discount">$6.48</span></h5>
                 </li>
                 <li class="bestseller-products">
-                    <img class="bestseller-images" src="./assets/images/product-cover-5 (4).png">
+                    <img class="bestseller-images" src="./src/pages/Home/assets/images/product-cover-5 (4).png">
                     <h4 class="bestseller-product-titles">Graphic Design</h4>
                     <h5 class="class-of-product">English Department</h5>
                     <h5 class="bestseller-product-price">$16.48 <span class="discount">$6.48</span></h5>
                 </li>
                 <li class="bestseller-products">
-                    <img class="bestseller-images" src="./assets/images/product-cover-5 (5).png">
+                    <img class="bestseller-images" src="./src/pages/Home/assets/images/product-cover-5 (5).png">
                     <h4 class="bestseller-product-titles">Graphic Design</h4>
                     <h5 class="class-of-product">English Department</h5>
                     <h5 class="bestseller-product-price">$16.48 <span class="discount">$6.48</span></h5>
                 </li>
                 <li class="bestseller-products">
-                    <img class="bestseller-images" src="./assets/images/product-cover-5 (6).png">
+                    <img class="bestseller-images" src="./src/pages/Home/assets/images/product-cover-5 (6).png">
                     <h4 class="bestseller-product-titles">Graphic Design</h4>
                     <h5 class="class-of-product">English Department</h5>
                     <h5 class="bestseller-product-price">$16.48 <span class="discount">$6.48</span></h5>
                 </li>
                 <li class="bestseller-products">
-                    <img class="bestseller-images" src="./assets/images/product-cover-5 (7).png">
+                    <img class="bestseller-images" src="./src/pages/Home/assets/images/product-cover-5 (7).png">
                     <h4 class="bestseller-product-titles">Graphic Design</h4>
                     <h5 class="class-of-product">English Department</h5>
                     <h5 class="bestseller-product-price">$16.48 <span class="discount">$6.48</span></h5>
                 </li>
                 <li class="bestseller-products">
-                    <img class="bestseller-images" src="./assets/images/product-cover-5 (1).png">
+                    <img class="bestseller-images" src="./src/pages/Home/assets/images/product-cover-5 (1).png">
                     <h4 class="bestseller-product-titles">Graphic Design</h4>
                     <h5 class="class-of-product">English Department</h5>
                     <h5 class="bestseller-product-price">$16.48 <span class="discount">$6.48</span></h5>
                 </li>
                 <li class="bestseller-products">
-                    <img class="bestseller-images" src="./assets/images/product-cover-5 (3).png">
+                    <img class="bestseller-images" src="./src/pages/Home/assets/images/product-cover-5 (3).png">
                     <h4 class="bestseller-product-titles">Graphic Design</h4>
                     <h5 class="class-of-product">English Department</h5>
                     <h5 class="bestseller-product-price">$16.48 <span class="discount">$6.48</span></h5>
                 </li>
                 <li class="bestseller-products">
-                    <img class="bestseller-images" src="./assets/images/product-cover-5 (8).png">
+                    <img class="bestseller-images" src="./src/pages/Home/assets/images/product-cover-5 (8).png">
                     <h4 class="bestseller-product-titles">Graphic Design</h4>
                     <h5 class="class-of-product">English Department</h5>
                     <h5 class="bestseller-product-price">$16.48 <span class="discount">$6.48</span></h5>
                 </li>
                 <li class="bestseller-products">
-                    <img class="bestseller-images" src="./assets/images/product-cover-5 (7).png">
+                    <img class="bestseller-images" src="./src/pages/Home/assets/images/product-cover-5 (7).png">
                     <h4 class="bestseller-product-titles">Graphic Design</h4>
                     <h5 class="class-of-product">English Department</h5>
                     <h5 class="bestseller-product-price">$16.48 <span class="discount">$6.48</span></h5>
                 </li>
-                <a class="load-more-link">
-                    <button class="load-more">LOAD MORE PRODUCTS</button></a>
+                <div id="more-container">
+                    <li class="bestseller-products">
+                        <img class="bestseller-images" src="./src/pages/Home/assets/images/product-cover-5 (7).png">
+                        <h4 class="bestseller-product-titles">Graphic Design</h4>
+                        <h5 class="class-of-product">English Department</h5>
+                        <h5 class="bestseller-product-price">$16.48 <span class="discount">$6.48</span></h5>
+                    </li>
+                    <li class="bestseller-products">
+                        <img class="bestseller-images" src="./src/pages/Home/assets/images/product-cover-5 (1).png">
+                        <h4 class="bestseller-product-titles">Graphic Design</h4>
+                        <h5 class="class-of-product">English Department</h5>
+                        <h5 class="bestseller-product-price">$16.48 <span class="discount">$6.48</span></h5>
+                    </li>
+                    <li class="bestseller-products">
+                        <img class="bestseller-images" src="./src/pages/Home/assets/images/product-cover-5 (3).png">
+                        <h4 class="bestseller-product-titles">Graphic Design</h4>
+                        <h5 class="class-of-product">English Department</h5>
+                        <h5 class="bestseller-product-price">$16.48 <span class="discount">$6.48</span></h5>
+                    </li>
+                    <li class="bestseller-products">
+                        <img class="bestseller-images" src="./src/pages/Home/assets/images/product-cover-5 (8).png">
+                        <h4 class="bestseller-product-titles">Graphic Design</h4>
+                        <h5 class="class-of-product">English Department</h5>
+                        <h5 class="bestseller-product-price">$16.48 <span class="discount">$6.48</span></h5>
+                    </li>
+                    <li class="bestseller-products">
+                        <img class="bestseller-images" src="./src/pages/Home/assets/images/product-cover-5 (7).png">
+                        <h4 class="bestseller-product-titles">Graphic Design</h4>
+                        <h5 class="class-of-product">English Department</h5>
+                        <h5 class="bestseller-product-price">$16.48 <span class="discount">$6.48</span></h5>
+                    </li>
+                </div>
             </ul>
+            <a>
+                <button class="load-more-btn" id="more-btn"> LOAD MORE PRODUCTS</button>
+            </a>
         </section>
         <div class="featured-products">
-            <img src="./assets/images/unsplash_Lks7vei-eAg.png">
-            <img src="./assets/images/unsplash_Lks7vei-eAg (1).png">
+            <img src="./src/pages/Home/assets/images/unsplash_Lks7vei-eAg.png">
+            <img src="./src/pages/Home/assets/images/unsplash_Lks7vei-eAg (1).png">
             <div class="text-container">
-                <h3 class="subtitle-container">Featured Products</h3>
+                <h3 class="subtitle-container-blue">Featured Products</h3>
                 <h1 class="featured-products-title">We love what we do</h1>
-                <p class="first-paragraph">Problems trying to resolve the conflict between the two major realms of
+                <p class=paragraph>Problems trying to resolve the conflict between the two major realms of
+                    Classical physics: Newtonian mechanics.
+                    <br><br><br>
+                    Problems trying to resolve the conflict between the two major realms of
                     Classical physics: Newtonian mechanics.
                 </p>
-                <p class="second-paragraph">Problems trying to resolve the conflict between the two major realms of
-                    Classical physics: Newtonian mechanics.</p>
             </div>
         </div>
         <div class="the-best-services-container">
-            <h3 class="the-best-service-sub-title">Featured Products</h3>
-            <h1 class="the-best-service-title">THE BEST SERVICES</h1>
-            <p class="the-best-service-text">Problems trying to resolve the conflict between</p>
+            <h3 class="subtitle-container">Featured Products</h3>
+            <h1 class="title">THE BEST SERVICES</h1>
+            <p class="description">Problems trying to resolve the conflict between</p>
 
             <ul class="bests-services-types">
                 <li>
-                    <img src="./assets/icons/easy-wins-icon.svg" alt="Book open">
+                    <img src="./src/pages/Home/assets/icons/easy-wins-icon.svg" alt="Book open">
                     <h3 class="best-service-title">Easy wins</h3>
-                    <h4 class="best-service-description">Get your best looking smile now!</h4>
+                    <h4 class="best-service-description">Get your best looking smile <br /> now!</h4>
                 </li>
                 <li>
-                    <img src="./assets/icons/concrete-icon.svg" alt="Pages">
+                    <img src="./src/pages/Home/assets/icons/concrete-icon.svg" alt="Pages">
                     <h3 class="best-service-title">Concrete</h3>
-                    <h4 class="best-service-description">Defalcate is most focused in helping you discover your most
+                    <h4 class="best-service-description">Defalcate is most focused in <br /> helping you discover your
+                        most<br />
                         beautiful smile</h4>
                 </li>
                 <li>
-                    <img src="./assets/icons/hack-icon.svg" alt="graph rising">
+                    <img src="./src/pages/Home/assets/icons/hack-icon.svg" alt="graph rising">
                     <h3 class="best-service-title">Hack Growth</h3>
-                    <h4 class="best-service-description">Overcame any hurdle or any other problem.</h4>
+                    <h4 class="best-service-description">Overcame any hurdle or any <br> other problem.</h4>
                 </li>
             </ul>
         </div>
-        <div class="featured-posts-container">
-            <h3 class="subtitle-container">Pratice Advice</h3>
+        <section class="featured-posts-container">
+            <h3 class="subtitle-container-blue">Pratice Advice</h3>
             <h1 class="title-container">Featured Posts</h1>
-            <div class="featured-post">
-                <div class="chart-container">
-                    <h3 class="sale-seal">Sale</h3>
-                    <ul class="icons-list">
-                        <li heart-icon>
-                            <img src="./assets/icons/heart icon.svg" alt="Heart icon">
-                        </li>
-                        <li class="chart-icon">
-                            <img src="./assets/icons/chart icon 2.svg" alt="Chart icon">
-                        </li>
-                        <li class="eye-icon"><img src="./assets/icons/eye icon.svg" alt="Eye icon"></li>
-                    </ul>
+            <div class="featured">
+                <div class="featured-post">
+                    <div class="chart-container first">
+                        <h3 class="sale-seal">Sale</h3>
+                        <ul class="icons-list">
+                            <li class="heart-icon">
+                                <img src="./src/pages/Home/assets/icons/heart icon.svg" alt="Heart icon">
+                            </li>
+                            <li class="chart-icon">
+                                <img src="./src/pages/Home/assets/icons/chart icon 2.svg" alt="Chart icon">
+                            </li>
+                            <li class="eye-icon">
+                              <img src="./src/pages/Home/assets/icons/eye icon.svg" alt="Eye icon">
+                            </li>
+                        </ul>
 
-                </div>
-                <div class="description-container">
-                    <h3 class="subtitle-container">English Department <span class="hate"><svg width="17" height="16"
-                                viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16 6.3H10.275L8.5 0.75L6.725 6.3H1L5.625 9.725L3.875 15.25L8.5 11.825L13.125 15.25L11.35 9.7L16 6.3Z"
-                                    fill="#FFCE31" />
+                    </div>
+                    <div class="description-container">
+                        <h3 class="subtitle-featured-post">English Department <span class="hate"><svg width="17"
+                                    height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16 6.3H10.275L8.5 0.75L6.725 6.3H1L5.625 9.725L3.875 15.25L8.5 11.825L13.125 15.25L11.35 9.7L16 6.3Z"
+                                        fill="#FFCE31" />
+                                </svg>
+                                4.9
+                            </span></h3>
+                        <h2 class="title-post">Graphic Design</h2>
+                        <p class="description">We focus on ergonomics and <br />
+                            meeting you where you work. It's<br />
+                            only a keystroke away.</p>
+
+
+                        <h4 class="sales">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3742_387)">
+                                    <path
+                                        d="M1 9.8999C1.13261 9.8999 1.25979 9.95258 1.35355 10.0463C1.44732 10.1401 1.5 10.2673 1.5 10.3999V12.8999C1.5 13.1651 1.60536 13.4195 1.79289 13.607C1.98043 13.7945 2.23478 13.8999 2.5 13.8999H14.5C14.7652 13.8999 15.0196 13.7945 15.2071 13.607C15.3946 13.4195 15.5 13.1651 15.5 12.8999V10.3999C15.5 10.2673 15.5527 10.1401 15.6464 10.0463C15.7402 9.95258 15.8674 9.8999 16 9.8999C16.1326 9.8999 16.2598 9.95258 16.3536 10.0463C16.4473 10.1401 16.5 10.2673 16.5 10.3999V12.8999C16.5 13.4303 16.2893 13.939 15.9142 14.3141C15.5391 14.6892 15.0304 14.8999 14.5 14.8999H2.5C1.96957 14.8999 1.46086 14.6892 1.08579 14.3141C0.710714 13.939 0.5 13.4303 0.5 12.8999V10.3999C0.5 10.2673 0.552678 10.1401 0.646447 10.0463C0.740215 9.95258 0.867392 9.8999 1 9.8999Z"
+                                        fill="#737373" />
+                                    <path
+                                        d="M8.1459 11.854C8.19234 11.9006 8.24752 11.9375 8.30827 11.9627C8.36901 11.9879 8.43413 12.0009 8.4999 12.0009C8.56567 12.0009 8.63079 11.9879 8.69153 11.9627C8.75228 11.9375 8.80745 11.9006 8.8539 11.854L11.8539 8.854C11.9478 8.76011 12.0005 8.63278 12.0005 8.5C12.0005 8.36722 11.9478 8.23989 11.8539 8.146C11.76 8.05211 11.6327 7.99937 11.4999 7.99937C11.3671 7.99937 11.2398 8.05211 11.1459 8.146L8.9999 10.293V1.5C8.9999 1.36739 8.94722 1.24021 8.85345 1.14645C8.75969 1.05268 8.63251 1 8.4999 1C8.36729 1 8.24011 1.05268 8.14635 1.14645C8.05258 1.24021 7.9999 1.36739 7.9999 1.5V10.293L5.8539 8.146C5.76001 8.05211 5.63268 7.99937 5.4999 7.99937C5.36712 7.99937 5.23979 8.05211 5.1459 8.146C5.05201 8.23989 4.99927 8.36722 4.99927 8.5C4.99927 8.63278 5.05201 8.76011 5.1459 8.854L8.1459 11.854Z"
+                                        fill="#737373" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3742_387">
+                                        <rect width="16" height="16" fill="white" transform="translate(0.5)" />
+                                    </clipPath>
+                                </defs>
                             </svg>
-                            4,9
-                        </span></h3>
-                    <h2 class="title-post">Graphi Design</h2>
-                    <p class="description">We focus on ergonomics and
-                        meeting you where you work. It's
-                        only a keystroke away.</p>
+
+                            15 salles
+                        </h4>
+                        <h4 class="price">$16.48 <span class="discount">$6.48</span></h4>
+                        <ul class="colors-container">
+                            <li class="colors"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8.5" cy="8" r="8" fill="#23A6F0" />
+                                </svg>
+                            </li>
+                            <li class="colors">
+                              <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8.5769" cy="8" r="8" fill="#23856D" />
+                                </svg>
+                            </li>
+                            <li class="colors"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8.65381" cy="8" r="8" fill="#E77C40" />
+                                </svg>
+                            </li>
+                            <li class="colors"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8.73071" cy="8" r="8" fill="#252B42" />
+                                </svg>
+                            </li>
+                        </ul>
+                        <div class="time-course-container">
+                            <h5 class="time-course"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.49934 14.6667C5.20379 14.6232 2.54278 11.9622 2.49934 8.66668C2.54278 5.37113 5.20379 2.71011 8.49934 2.66668C11.7949 2.71011 14.4559 5.37113 14.4993 8.66668C14.4559 11.9622 11.7949 14.6232 8.49934 14.6667ZM8.49934 4.00001C5.93612 4.03376 3.86642 6.10346 3.83268 8.66668C3.86642 11.2299 5.93612 13.2996 8.49934 13.3333C11.0626 13.2996 13.1323 11.2299 13.166 8.66668C13.1323 6.10346 11.0626 4.03376 8.49934 4.00001ZM11.8327 9.33334H7.83268V5.33334H9.16601V8.00001H11.8327V9.33334ZM14.0273 4.47201L12.0213 2.47201L12.9607 1.52734L14.9673 3.52734L14.0273 4.47134V4.47201ZM2.97068 4.47201L2.02734 3.52734L4.02134 1.52734L4.96468 2.47201L2.97201 4.47201H2.97068Z"
+                                        fill="#23A6F0" />
+                                </svg>
+                                22h...
+                            </h5>
+                            <h5 class="time-course">
+
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.5 3.307L14.8425 3.5255C13.9214 3.81404 12.9649 3.97373 12 4C11.133 4 10.339 3.5465 9.498 3.066C8.581 2.542 7.633 2 6.5 2C5.0615 2 3.4575 3.103 2.5 3.886V1H1.5V14C1.50026 14.2651 1.60571 14.5193 1.79319 14.7068C1.98066 14.8943 2.23486 14.9997 2.5 15H15.5V3.307ZM2.5 10.147C3.437 8.688 5.28 6.5 6.5 6.5C7.319 6.5 7.98 7.051 8.68 7.6345C9.4485 8.2745 10.319 9 11.5 9C12.618 8.94638 13.6809 8.49837 14.5 7.7355V10.2135C13.5781 10.7138 12.5488 10.9837 11.5 11C10.6978 10.9786 9.90531 10.8181 9.158 10.5255C8.30921 10.1974 7.40978 10.0196 6.5 10C5.0365 10 3.466 11.4795 2.5 12.579V10.147ZM6.5 3C7.367 3 8.161 3.4535 9.002 3.934C9.919 4.458 10.867 5 12 5C12.8438 4.98583 13.6829 4.87204 14.5 4.661V6.3215C14.1585 6.723 12.958 8 11.5 8C10.681 8 10.02 7.449 9.32 6.8655C8.5515 6.2255 7.681 5.5 6.5 5.5C5.032 5.5 3.4685 7.17 2.5 8.4225V5.212C3.273 4.483 5.1295 3 6.5 3ZM2.6245 14C3.431 12.9545 5.205 11 6.5 11C7.30225 11.0214 8.09469 11.1819 8.842 11.4745C9.69079 11.8026 10.5902 11.9804 11.5 12C12.536 11.9901 13.5582 11.7618 14.5 11.33V14H2.6245Z"
+                                        fill="#E77C40" />
+                                </svg>
+
+                                64 Lessons
+                            </h5>
+                            <h5 class="time-course">
+
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3770_249)">
+                                        <path
+                                            d="M16.3333 13.8334H2V0.833415C2 0.741748 1.925 0.666748 1.83333 0.666748H0.666667C0.575 0.666748 0.5 0.741748 0.5 0.833415V15.1667C0.5 15.2584 0.575 15.3334 0.666667 15.3334H16.3333C16.425 15.3334 16.5 15.2584 16.5 15.1667V14.0001C16.5 13.9084 16.425 13.8334 16.3333 13.8334ZM3.5 12.5001H14.6667C14.7583 12.5001 14.8333 12.4251 14.8333 12.3334V3.25008C14.8333 3.10008 14.6521 3.02716 14.5479 3.13133L10.1667 7.51258L7.55417 4.92925C7.52284 4.89823 7.48054 4.88083 7.43646 4.88083C7.39238 4.88083 7.35007 4.89823 7.31875 4.92925L3.38125 8.87925C3.36596 8.89457 3.35385 8.91277 3.34562 8.93279C3.3374 8.95281 3.33322 8.97427 3.33333 8.99591V12.3334C3.33333 12.4251 3.40833 12.5001 3.5 12.5001Z"
+                                            fill="#23856D" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3770_249">
+                                            <rect width="16" height="14.6667" fill="white"
+                                                transform="translate(0.5 0.666748)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                                Progress
+                            </h5>
+                        </div>
+                        <button class="learn-more">Learn More</button>
+
+                    </div>
+                </div>
+                <div class="featured-post">
+                    <div class="chart-container second">
+                        <h3 class="sale-seal">Sale</h3>
+                        <ul class="icons-list">
+                            <li class="heart-icon">
+                                <img src="./src/pages/Home/assets/icons/heart icon.svg" alt="Heart icon">
+                            </li>
+                            <li class="chart-icon">
+                                <img src="./src/pages/Home/assets/icons/chart icon 2.svg" alt="Chart icon">
+                            </li>
+                            <li class="eye-icon">
+                              <img src="./src/pages/Home/assets/icons/eye icon.svg" alt="Eye icon"></li>
+                        </ul>
+
+                    </div>
+                    <div class="description-container">
+                        <h3 class="subtitle-featured-post">English Department <span class="hate"><svg width="17"
+                                    height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16 6.3H10.275L8.5 0.75L6.725 6.3H1L5.625 9.725L3.875 15.25L8.5 11.825L13.125 15.25L11.35 9.7L16 6.3Z"
+                                        fill="#FFCE31" />
+                                </svg>
+                                4.9
+                            </span></h3>
+                        <h2 class="title-post">Graphic Design</h2>
+                        <p class="description">We focus on ergonomics and <br />
+                            meeting you where you work. It's<br />
+                            only a keystroke away.</p>
 
 
-                    <h4 class="sales">
-                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_3742_387)">
-                                <path
-                                    d="M1 9.8999C1.13261 9.8999 1.25979 9.95258 1.35355 10.0463C1.44732 10.1401 1.5 10.2673 1.5 10.3999V12.8999C1.5 13.1651 1.60536 13.4195 1.79289 13.607C1.98043 13.7945 2.23478 13.8999 2.5 13.8999H14.5C14.7652 13.8999 15.0196 13.7945 15.2071 13.607C15.3946 13.4195 15.5 13.1651 15.5 12.8999V10.3999C15.5 10.2673 15.5527 10.1401 15.6464 10.0463C15.7402 9.95258 15.8674 9.8999 16 9.8999C16.1326 9.8999 16.2598 9.95258 16.3536 10.0463C16.4473 10.1401 16.5 10.2673 16.5 10.3999V12.8999C16.5 13.4303 16.2893 13.939 15.9142 14.3141C15.5391 14.6892 15.0304 14.8999 14.5 14.8999H2.5C1.96957 14.8999 1.46086 14.6892 1.08579 14.3141C0.710714 13.939 0.5 13.4303 0.5 12.8999V10.3999C0.5 10.2673 0.552678 10.1401 0.646447 10.0463C0.740215 9.95258 0.867392 9.8999 1 9.8999Z"
-                                    fill="#737373" />
-                                <path
-                                    d="M8.1459 11.854C8.19234 11.9006 8.24752 11.9375 8.30827 11.9627C8.36901 11.9879 8.43413 12.0009 8.4999 12.0009C8.56567 12.0009 8.63079 11.9879 8.69153 11.9627C8.75228 11.9375 8.80745 11.9006 8.8539 11.854L11.8539 8.854C11.9478 8.76011 12.0005 8.63278 12.0005 8.5C12.0005 8.36722 11.9478 8.23989 11.8539 8.146C11.76 8.05211 11.6327 7.99937 11.4999 7.99937C11.3671 7.99937 11.2398 8.05211 11.1459 8.146L8.9999 10.293V1.5C8.9999 1.36739 8.94722 1.24021 8.85345 1.14645C8.75969 1.05268 8.63251 1 8.4999 1C8.36729 1 8.24011 1.05268 8.14635 1.14645C8.05258 1.24021 7.9999 1.36739 7.9999 1.5V10.293L5.8539 8.146C5.76001 8.05211 5.63268 7.99937 5.4999 7.99937C5.36712 7.99937 5.23979 8.05211 5.1459 8.146C5.05201 8.23989 4.99927 8.36722 4.99927 8.5C4.99927 8.63278 5.05201 8.76011 5.1459 8.854L8.1459 11.854Z"
-                                    fill="#737373" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_3742_387">
-                                    <rect width="16" height="16" fill="white" transform="translate(0.5)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
+                        <h4 class="sales">
+                            <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3742_387)">
+                                    <path
+                                        d="M1 9.8999C1.13261 9.8999 1.25979 9.95258 1.35355 10.0463C1.44732 10.1401 1.5 10.2673 1.5 10.3999V12.8999C1.5 13.1651 1.60536 13.4195 1.79289 13.607C1.98043 13.7945 2.23478 13.8999 2.5 13.8999H14.5C14.7652 13.8999 15.0196 13.7945 15.2071 13.607C15.3946 13.4195 15.5 13.1651 15.5 12.8999V10.3999C15.5 10.2673 15.5527 10.1401 15.6464 10.0463C15.7402 9.95258 15.8674 9.8999 16 9.8999C16.1326 9.8999 16.2598 9.95258 16.3536 10.0463C16.4473 10.1401 16.5 10.2673 16.5 10.3999V12.8999C16.5 13.4303 16.2893 13.939 15.9142 14.3141C15.5391 14.6892 15.0304 14.8999 14.5 14.8999H2.5C1.96957 14.8999 1.46086 14.6892 1.08579 14.3141C0.710714 13.939 0.5 13.4303 0.5 12.8999V10.3999C0.5 10.2673 0.552678 10.1401 0.646447 10.0463C0.740215 9.95258 0.867392 9.8999 1 9.8999Z"
+                                        fill="#737373" />
+                                    <path
+                                        d="M8.1459 11.854C8.19234 11.9006 8.24752 11.9375 8.30827 11.9627C8.36901 11.9879 8.43413 12.0009 8.4999 12.0009C8.56567 12.0009 8.63079 11.9879 8.69153 11.9627C8.75228 11.9375 8.80745 11.9006 8.8539 11.854L11.8539 8.854C11.9478 8.76011 12.0005 8.63278 12.0005 8.5C12.0005 8.36722 11.9478 8.23989 11.8539 8.146C11.76 8.05211 11.6327 7.99937 11.4999 7.99937C11.3671 7.99937 11.2398 8.05211 11.1459 8.146L8.9999 10.293V1.5C8.9999 1.36739 8.94722 1.24021 8.85345 1.14645C8.75969 1.05268 8.63251 1 8.4999 1C8.36729 1 8.24011 1.05268 8.14635 1.14645C8.05258 1.24021 7.9999 1.36739 7.9999 1.5V10.293L5.8539 8.146C5.76001 8.05211 5.63268 7.99937 5.4999 7.99937C5.36712 7.99937 5.23979 8.05211 5.1459 8.146C5.05201 8.23989 4.99927 8.36722 4.99927 8.5C4.99927 8.63278 5.05201 8.76011 5.1459 8.854L8.1459 11.854Z"
+                                        fill="#737373" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3742_387">
+                                        <rect width="16" height="16" fill="white" transform="translate(0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
 
-                        15 salles
-                    </h4>
-                    <h4 class="price">$16.48 <span class="discount">$6.48</span></h4>
-                    <ul class="color-container">
-                        <li class="colors"></li>
-                        <li class="colors"></li>
-                        <li class="colors"></li>
-                        <li class="colors"></li>
-                    </ul>
-                    <h5 class="curse-time"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M8.49934 14.6667C5.20379 14.6232 2.54278 11.9622 2.49934 8.66668C2.54278 5.37113 5.20379 2.71011 8.49934 2.66668C11.7949 2.71011 14.4559 5.37113 14.4993 8.66668C14.4559 11.9622 11.7949 14.6232 8.49934 14.6667ZM8.49934 4.00001C5.93612 4.03376 3.86642 6.10346 3.83268 8.66668C3.86642 11.2299 5.93612 13.2996 8.49934 13.3333C11.0626 13.2996 13.1323 11.2299 13.166 8.66668C13.1323 6.10346 11.0626 4.03376 8.49934 4.00001ZM11.8327 9.33334H7.83268V5.33334H9.16601V8.00001H11.8327V9.33334ZM14.0273 4.47201L12.0213 2.47201L12.9607 1.52734L14.9673 3.52734L14.0273 4.47134V4.47201ZM2.97068 4.47201L2.02734 3.52734L4.02134 1.52734L4.96468 2.47201L2.97201 4.47201H2.97068Z"
-                                fill="#23A6F0" />
-                        </svg>
-                        22h...
-                    </h5>
-                    <h5 class="number-lessons">
+                            15 salles
+                        </h4>
+                        <h4 class="price">$16.48 <span class="discount">$6.48</span></h4>
+                        <ul class="colors-container">
+                            <li class="colors">
+                              <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8.5" cy="8" r="8" fill="#23A6F0" />
+                                </svg>
+                            </li>
+                            <li class="colors"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8.5769" cy="8" r="8" fill="#23856D" />
+                                </svg>
+                            </li>
+                            <li class="colors"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8.65381" cy="8" r="8" fill="#E77C40" />
+                                </svg>
+                            </li>
+                            <li class="colors"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="8.73071" cy="8" r="8" fill="#252B42" />
+                                </svg>
+                            </li>
+                        </ul>
+                        <div class="time-course-container">
+                            <h5 class="time-course">
+                              <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.49934 14.6667C5.20379 14.6232 2.54278 11.9622 2.49934 8.66668C2.54278 5.37113 5.20379 2.71011 8.49934 2.66668C11.7949 2.71011 14.4559 5.37113 14.4993 8.66668C14.4559 11.9622 11.7949 14.6232 8.49934 14.6667ZM8.49934 4.00001C5.93612 4.03376 3.86642 6.10346 3.83268 8.66668C3.86642 11.2299 5.93612 13.2996 8.49934 13.3333C11.0626 13.2996 13.1323 11.2299 13.166 8.66668C13.1323 6.10346 11.0626 4.03376 8.49934 4.00001ZM11.8327 9.33334H7.83268V5.33334H9.16601V8.00001H11.8327V9.33334ZM14.0273 4.47201L12.0213 2.47201L12.9607 1.52734L14.9673 3.52734L14.0273 4.47134V4.47201ZM2.97068 4.47201L2.02734 3.52734L4.02134 1.52734L4.96468 2.47201L2.97201 4.47201H2.97068Z"
+                                        fill="#23A6F0" />
+                                </svg>
+                                22h...
+                            </h5>
+                            <h5 class="time-course">
 
-                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M15.5 3.307L14.8425 3.5255C13.9214 3.81404 12.9649 3.97373 12 4C11.133 4 10.339 3.5465 9.498 3.066C8.581 2.542 7.633 2 6.5 2C5.0615 2 3.4575 3.103 2.5 3.886V1H1.5V14C1.50026 14.2651 1.60571 14.5193 1.79319 14.7068C1.98066 14.8943 2.23486 14.9997 2.5 15H15.5V3.307ZM2.5 10.147C3.437 8.688 5.28 6.5 6.5 6.5C7.319 6.5 7.98 7.051 8.68 7.6345C9.4485 8.2745 10.319 9 11.5 9C12.618 8.94638 13.6809 8.49837 14.5 7.7355V10.2135C13.5781 10.7138 12.5488 10.9837 11.5 11C10.6978 10.9786 9.90531 10.8181 9.158 10.5255C8.30921 10.1974 7.40978 10.0196 6.5 10C5.0365 10 3.466 11.4795 2.5 12.579V10.147ZM6.5 3C7.367 3 8.161 3.4535 9.002 3.934C9.919 4.458 10.867 5 12 5C12.8438 4.98583 13.6829 4.87204 14.5 4.661V6.3215C14.1585 6.723 12.958 8 11.5 8C10.681 8 10.02 7.449 9.32 6.8655C8.5515 6.2255 7.681 5.5 6.5 5.5C5.032 5.5 3.4685 7.17 2.5 8.4225V5.212C3.273 4.483 5.1295 3 6.5 3ZM2.6245 14C3.431 12.9545 5.205 11 6.5 11C7.30225 11.0214 8.09469 11.1819 8.842 11.4745C9.69079 11.8026 10.5902 11.9804 11.5 12C12.536 11.9901 13.5582 11.7618 14.5 11.33V14H2.6245Z"
-                                fill="#E77C40" />
-                        </svg>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.5 3.307L14.8425 3.5255C13.9214 3.81404 12.9649 3.97373 12 4C11.133 4 10.339 3.5465 9.498 3.066C8.581 2.542 7.633 2 6.5 2C5.0615 2 3.4575 3.103 2.5 3.886V1H1.5V14C1.50026 14.2651 1.60571 14.5193 1.79319 14.7068C1.98066 14.8943 2.23486 14.9997 2.5 15H15.5V3.307ZM2.5 10.147C3.437 8.688 5.28 6.5 6.5 6.5C7.319 6.5 7.98 7.051 8.68 7.6345C9.4485 8.2745 10.319 9 11.5 9C12.618 8.94638 13.6809 8.49837 14.5 7.7355V10.2135C13.5781 10.7138 12.5488 10.9837 11.5 11C10.6978 10.9786 9.90531 10.8181 9.158 10.5255C8.30921 10.1974 7.40978 10.0196 6.5 10C5.0365 10 3.466 11.4795 2.5 12.579V10.147ZM6.5 3C7.367 3 8.161 3.4535 9.002 3.934C9.919 4.458 10.867 5 12 5C12.8438 4.98583 13.6829 4.87204 14.5 4.661V6.3215C14.1585 6.723 12.958 8 11.5 8C10.681 8 10.02 7.449 9.32 6.8655C8.5515 6.2255 7.681 5.5 6.5 5.5C5.032 5.5 3.4685 7.17 2.5 8.4225V5.212C3.273 4.483 5.1295 3 6.5 3ZM2.6245 14C3.431 12.9545 5.205 11 6.5 11C7.30225 11.0214 8.09469 11.1819 8.842 11.4745C9.69079 11.8026 10.5902 11.9804 11.5 12C12.536 11.9901 13.5582 11.7618 14.5 11.33V14H2.6245Z"
+                                        fill="#E77C40" />
+                                </svg>
 
-                        64 Lessons
-                    </h5>
-                    <h5 class="progress">
+                                64 Lessons
+                            </h5>
+                            <h5 class="time-course">
 
-                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_3770_249)">
-                                <path
-                                    d="M16.3333 13.8334H2V0.833415C2 0.741748 1.925 0.666748 1.83333 0.666748H0.666667C0.575 0.666748 0.5 0.741748 0.5 0.833415V15.1667C0.5 15.2584 0.575 15.3334 0.666667 15.3334H16.3333C16.425 15.3334 16.5 15.2584 16.5 15.1667V14.0001C16.5 13.9084 16.425 13.8334 16.3333 13.8334ZM3.5 12.5001H14.6667C14.7583 12.5001 14.8333 12.4251 14.8333 12.3334V3.25008C14.8333 3.10008 14.6521 3.02716 14.5479 3.13133L10.1667 7.51258L7.55417 4.92925C7.52284 4.89823 7.48054 4.88083 7.43646 4.88083C7.39238 4.88083 7.35007 4.89823 7.31875 4.92925L3.38125 8.87925C3.36596 8.89457 3.35385 8.91277 3.34562 8.93279C3.3374 8.95281 3.33322 8.97427 3.33333 8.99591V12.3334C3.33333 12.4251 3.40833 12.5001 3.5 12.5001Z"
-                                    fill="#23856D" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_3770_249">
-                                    <rect width="16" height="14.6667" fill="white"
-                                        transform="translate(0.5 0.666748)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
+                                <svg width="17" height="16" viewBox="0 0 17 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3770_249)">
+                                        <path
+                                            d="M16.3333 13.8334H2V0.833415C2 0.741748 1.925 0.666748 1.83333 0.666748H0.666667C0.575 0.666748 0.5 0.741748 0.5 0.833415V15.1667C0.5 15.2584 0.575 15.3334 0.666667 15.3334H16.3333C16.425 15.3334 16.5 15.2584 16.5 15.1667V14.0001C16.5 13.9084 16.425 13.8334 16.3333 13.8334ZM3.5 12.5001H14.6667C14.7583 12.5001 14.8333 12.4251 14.8333 12.3334V3.25008C14.8333 3.10008 14.6521 3.02716 14.5479 3.13133L10.1667 7.51258L7.55417 4.92925C7.52284 4.89823 7.48054 4.88083 7.43646 4.88083C7.39238 4.88083 7.35007 4.89823 7.31875 4.92925L3.38125 8.87925C3.36596 8.89457 3.35385 8.91277 3.34562 8.93279C3.3374 8.95281 3.33322 8.97427 3.33333 8.99591V12.3334C3.33333 12.4251 3.40833 12.5001 3.5 12.5001Z"
+                                            fill="#23856D" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3770_249">
+                                            <rect width="16" height="14.6667" fill="white"
+                                                transform="translate(0.5 0.666748)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
 
-                        Progress
-                    </h5>
-                    <button class="learn-more">Learn More</button>
+                                Progress
+                            </h5>
+                        </div>
+                        <button class="learn-more">Learn More</button>
 
+                    </div>
                 </div>
             </div>
-            <div class="featured-post">
-                <div class="chart-container">
-                    <h3 class="sale-seal">Sale</h3>
-                    <ul class="icons-list">
-                        <li heart-icon>
-                            <img src="./assets/icons/heart icon.svg" alt="Heart icon">
-                        </li>
-                        <li class="chart-icon">
-                            <img src="./assets/icons/chart icon 2.svg" alt="Chart icon">
-                        </li>
-                        <li class="eye-icon"><img src="./assets/icons/eye icon.svg" alt="Eye icon"></li>
-                    </ul>
-
-                </div>
-                <div class="description-container">
-                    <h3 class="subtitle-container">English Department <span class="hate"><svg width="17" height="16"
-                                viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16 6.3H10.275L8.5 0.75L6.725 6.3H1L5.625 9.725L3.875 15.25L8.5 11.825L13.125 15.25L11.35 9.7L16 6.3Z"
-                                    fill="#FFCE31" />
-                            </svg>
-                            4,9
-                        </span></h3>
-                    <h2 class="title-post">Graphi Design</h2>
-                    <p class="description">We focus on ergonomics and
-                        meeting you where you work. It's
-                        only a keystroke away.</p>
-
-
-                    <h4 class="sales">
-                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_3742_387)">
-                                <path
-                                    d="M1 9.8999C1.13261 9.8999 1.25979 9.95258 1.35355 10.0463C1.44732 10.1401 1.5 10.2673 1.5 10.3999V12.8999C1.5 13.1651 1.60536 13.4195 1.79289 13.607C1.98043 13.7945 2.23478 13.8999 2.5 13.8999H14.5C14.7652 13.8999 15.0196 13.7945 15.2071 13.607C15.3946 13.4195 15.5 13.1651 15.5 12.8999V10.3999C15.5 10.2673 15.5527 10.1401 15.6464 10.0463C15.7402 9.95258 15.8674 9.8999 16 9.8999C16.1326 9.8999 16.2598 9.95258 16.3536 10.0463C16.4473 10.1401 16.5 10.2673 16.5 10.3999V12.8999C16.5 13.4303 16.2893 13.939 15.9142 14.3141C15.5391 14.6892 15.0304 14.8999 14.5 14.8999H2.5C1.96957 14.8999 1.46086 14.6892 1.08579 14.3141C0.710714 13.939 0.5 13.4303 0.5 12.8999V10.3999C0.5 10.2673 0.552678 10.1401 0.646447 10.0463C0.740215 9.95258 0.867392 9.8999 1 9.8999Z"
-                                    fill="#737373" />
-                                <path
-                                    d="M8.1459 11.854C8.19234 11.9006 8.24752 11.9375 8.30827 11.9627C8.36901 11.9879 8.43413 12.0009 8.4999 12.0009C8.56567 12.0009 8.63079 11.9879 8.69153 11.9627C8.75228 11.9375 8.80745 11.9006 8.8539 11.854L11.8539 8.854C11.9478 8.76011 12.0005 8.63278 12.0005 8.5C12.0005 8.36722 11.9478 8.23989 11.8539 8.146C11.76 8.05211 11.6327 7.99937 11.4999 7.99937C11.3671 7.99937 11.2398 8.05211 11.1459 8.146L8.9999 10.293V1.5C8.9999 1.36739 8.94722 1.24021 8.85345 1.14645C8.75969 1.05268 8.63251 1 8.4999 1C8.36729 1 8.24011 1.05268 8.14635 1.14645C8.05258 1.24021 7.9999 1.36739 7.9999 1.5V10.293L5.8539 8.146C5.76001 8.05211 5.63268 7.99937 5.4999 7.99937C5.36712 7.99937 5.23979 8.05211 5.1459 8.146C5.05201 8.23989 4.99927 8.36722 4.99927 8.5C4.99927 8.63278 5.05201 8.76011 5.1459 8.854L8.1459 11.854Z"
-                                    fill="#737373" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_3742_387">
-                                    <rect width="16" height="16" fill="white" transform="translate(0.5)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                        15 salles
-                    </h4>
-                    <h4 class="price">$16.48 <span class="discount">$6.48</span></h4>
-                    <ul class="color-container">
-                        <li class="colors"></li>
-                        <li class="colors"></li>
-                        <li class="colors"></li>
-                        <li class="colors"></li>
-                    </ul>
-                    <h5 class="curse-time"><svg width="17" height="16" viewBox="0 0 17 16" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M8.49934 14.6667C5.20379 14.6232 2.54278 11.9622 2.49934 8.66668C2.54278 5.37113 5.20379 2.71011 8.49934 2.66668C11.7949 2.71011 14.4559 5.37113 14.4993 8.66668C14.4559 11.9622 11.7949 14.6232 8.49934 14.6667ZM8.49934 4.00001C5.93612 4.03376 3.86642 6.10346 3.83268 8.66668C3.86642 11.2299 5.93612 13.2996 8.49934 13.3333C11.0626 13.2996 13.1323 11.2299 13.166 8.66668C13.1323 6.10346 11.0626 4.03376 8.49934 4.00001ZM11.8327 9.33334H7.83268V5.33334H9.16601V8.00001H11.8327V9.33334ZM14.0273 4.47201L12.0213 2.47201L12.9607 1.52734L14.9673 3.52734L14.0273 4.47134V4.47201ZM2.97068 4.47201L2.02734 3.52734L4.02134 1.52734L4.96468 2.47201L2.97201 4.47201H2.97068Z"
-                                fill="#23A6F0" />
-                        </svg>
-                        22h...
-                    </h5>
-                    <h5 class="number-lessons">
-
-                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M15.5 3.307L14.8425 3.5255C13.9214 3.81404 12.9649 3.97373 12 4C11.133 4 10.339 3.5465 9.498 3.066C8.581 2.542 7.633 2 6.5 2C5.0615 2 3.4575 3.103 2.5 3.886V1H1.5V14C1.50026 14.2651 1.60571 14.5193 1.79319 14.7068C1.98066 14.8943 2.23486 14.9997 2.5 15H15.5V3.307ZM2.5 10.147C3.437 8.688 5.28 6.5 6.5 6.5C7.319 6.5 7.98 7.051 8.68 7.6345C9.4485 8.2745 10.319 9 11.5 9C12.618 8.94638 13.6809 8.49837 14.5 7.7355V10.2135C13.5781 10.7138 12.5488 10.9837 11.5 11C10.6978 10.9786 9.90531 10.8181 9.158 10.5255C8.30921 10.1974 7.40978 10.0196 6.5 10C5.0365 10 3.466 11.4795 2.5 12.579V10.147ZM6.5 3C7.367 3 8.161 3.4535 9.002 3.934C9.919 4.458 10.867 5 12 5C12.8438 4.98583 13.6829 4.87204 14.5 4.661V6.3215C14.1585 6.723 12.958 8 11.5 8C10.681 8 10.02 7.449 9.32 6.8655C8.5515 6.2255 7.681 5.5 6.5 5.5C5.032 5.5 3.4685 7.17 2.5 8.4225V5.212C3.273 4.483 5.1295 3 6.5 3ZM2.6245 14C3.431 12.9545 5.205 11 6.5 11C7.30225 11.0214 8.09469 11.1819 8.842 11.4745C9.69079 11.8026 10.5902 11.9804 11.5 12C12.536 11.9901 13.5582 11.7618 14.5 11.33V14H2.6245Z"
-                                fill="#E77C40" />
-                        </svg>
-
-                        64 Lessons
-                    </h5>
-                    <h5 class="progress">
-
-                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_3770_249)">
-                                <path
-                                    d="M16.3333 13.8334H2V0.833415C2 0.741748 1.925 0.666748 1.83333 0.666748H0.666667C0.575 0.666748 0.5 0.741748 0.5 0.833415V15.1667C0.5 15.2584 0.575 15.3334 0.666667 15.3334H16.3333C16.425 15.3334 16.5 15.2584 16.5 15.1667V14.0001C16.5 13.9084 16.425 13.8334 16.3333 13.8334ZM3.5 12.5001H14.6667C14.7583 12.5001 14.8333 12.4251 14.8333 12.3334V3.25008C14.8333 3.10008 14.6521 3.02716 14.5479 3.13133L10.1667 7.51258L7.55417 4.92925C7.52284 4.89823 7.48054 4.88083 7.43646 4.88083C7.39238 4.88083 7.35007 4.89823 7.31875 4.92925L3.38125 8.87925C3.36596 8.89457 3.35385 8.91277 3.34562 8.93279C3.3374 8.95281 3.33322 8.97427 3.33333 8.99591V12.3334C3.33333 12.4251 3.40833 12.5001 3.5 12.5001Z"
-                                    fill="#23856D" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_3770_249">
-                                    <rect width="16" height="14.6667" fill="white"
-                                        transform="translate(0.5 0.666748)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                        Progress
-                    </h5>
-                    <button class="learn-more">Learn More</button>
-
-                </div>
-            </div>
-
-        </div>
+        </section>
         </div>
     </main>
     <footer>
@@ -481,12 +574,12 @@
             <p class="description">The quick fox jumps over the<br /> lazy dog</p>
             <div class="socials-footer">
                 <a href="#">
-                    <img src="./assets/icons/instagram icon.svg" alt="icone do instagram" class="social-icons"></a>
+                    <img src="./src/pages/Home/assets/icons/instagram icon.svg" alt="icone do instagram" class="social-icons"></a>
                 <a href="#">
-                    <img src="./assets/icons/facebook icon.svg" alt="icone do facebook" class="social-icons">
+                    <img src="./src/pages/Home/assets/icons/facebook icon.svg" alt="icone do facebook" class="social-icons">
                 </a>
                 <a href="#">
-                    <img src="./assets/icons/twitter icon.svg" alt="icone do twitter" class="social-icons">
+                    <img src="./src/pages/Home/assets/icons/twitter icon.svg" alt="icone do twitter" class="social-icons">
                 </a>
             </div>
         </div>
@@ -527,7 +620,7 @@
             </ul>
         </div>
     </footer>
-    <script src="./index.js"></script>
+    <script src="./src/pages/Home/index.js"></script>
 </body>
 
 </html>
